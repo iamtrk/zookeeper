@@ -1,0 +1,109 @@
+2018-07-16 21:58:41,937 [myid:] - INFO  [main:QuorumPeerConfig@134] - Reading configuration from: /Users/rivigo/zookeeper/zk-server-3/bin/../conf/zoo.cfg
+2018-07-16 21:58:41,954 [myid:] - INFO  [main:QuorumPeer$QuorumServer@167] - Resolved hostname: localhost to address: localhost/127.0.0.1
+2018-07-16 21:58:41,955 [myid:] - INFO  [main:QuorumPeer$QuorumServer@167] - Resolved hostname: localhost to address: localhost/127.0.0.1
+2018-07-16 21:58:41,955 [myid:] - INFO  [main:QuorumPeer$QuorumServer@167] - Resolved hostname: localhost to address: localhost/127.0.0.1
+2018-07-16 21:58:41,955 [myid:] - INFO  [main:QuorumPeer$QuorumServer@167] - Resolved hostname: localhost to address: localhost/127.0.0.1
+2018-07-16 21:58:41,955 [myid:] - INFO  [main:QuorumPeer$QuorumServer@167] - Resolved hostname: localhost to address: localhost/127.0.0.1
+2018-07-16 21:58:41,956 [myid:] - INFO  [main:QuorumPeerConfig@396] - Defaulting to majority quorums
+2018-07-16 21:58:41,961 [myid:3] - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2018-07-16 21:58:41,961 [myid:3] - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+2018-07-16 21:58:41,961 [myid:3] - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled.
+2018-07-16 21:58:41,972 [myid:3] - INFO  [main:QuorumPeerMain@127] - Starting quorum peer
+2018-07-16 21:58:41,984 [myid:3] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:2183
+2018-07-16 21:58:42,004 [myid:3] - INFO  [main:QuorumPeer@1134] - minSessionTimeout set to -1
+2018-07-16 21:58:42,004 [myid:3] - INFO  [main:QuorumPeer@1145] - maxSessionTimeout set to -1
+2018-07-16 21:58:42,004 [myid:3] - INFO  [main:QuorumPeer@1419] - QuorumPeer communication is not secured!
+2018-07-16 21:58:42,004 [myid:3] - INFO  [main:QuorumPeer@1448] - quorum.cnxn.threads.size set to 20
+2018-07-16 21:58:42,016 [myid:3] - INFO  [main:FileSnap@83] - Reading snapshot /Users/rivigo/zookeeper/data/zk3/version-2/snapshot.1500000000
+2018-07-16 21:58:42,035 [myid:3] - INFO  [ListenerThread:QuorumCnxManager$Listener@739] - My election bind port: localhost/127.0.0.1:3890
+2018-07-16 21:58:42,043 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:QuorumPeer@865] - LOOKING
+2018-07-16 21:58:42,044 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:FastLeaderElection@818] - New election. My id =  3, proposed zxid=0x1500000000
+2018-07-16 21:58:42,060 [myid:3] - INFO  [WorkerReceiver[myid=3]:FastLeaderElection@600] - Notification: 1 (message format version), 2 (n.leader), 0x1600000000 (n.zxid), 0x4 (n.round), LOOKING (n.state), 1 (n.sid), 0x18 (n.peerEpoch) LOOKING (my state)
+2018-07-16 21:58:42,061 [myid:3] - INFO  [WorkerReceiver[myid=3]:FastLeaderElection@600] - Notification: 1 (message format version), 3 (n.leader), 0x1500000000 (n.zxid), 0x1 (n.round), LOOKING (n.state), 3 (n.sid), 0x16 (n.peerEpoch) LOOKING (my state)
+2018-07-16 21:58:42,061 [myid:3] - INFO  [WorkerReceiver[myid=3]:FastLeaderElection@600] - Notification: 1 (message format version), 2 (n.leader), 0x1600000000 (n.zxid), 0x4 (n.round), LOOKING (n.state), 1 (n.sid), 0x18 (n.peerEpoch) LOOKING (my state)
+2018-07-16 21:58:42,061 [myid:3] - INFO  [WorkerReceiver[myid=3]:FastLeaderElection@600] - Notification: 1 (message format version), 2 (n.leader), 0x1600000000 (n.zxid), 0x4 (n.round), LOOKING (n.state), 2 (n.sid), 0x18 (n.peerEpoch) LOOKING (my state)
+2018-07-16 21:58:42,061 [myid:3] - INFO  [WorkerReceiver[myid=3]:FastLeaderElection@600] - Notification: 1 (message format version), 2 (n.leader), 0x1600000000 (n.zxid), 0x4 (n.round), LOOKING (n.state), 2 (n.sid), 0x18 (n.peerEpoch) LOOKING (my state)
+2018-07-16 21:58:42,062 [myid:3] - WARN  [WorkerSender[myid=3]:QuorumCnxManager@588] - Cannot open channel to 4 at election address localhost/127.0.0.1:3891
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:400)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:243)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:225)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:402)
+	at java.base/java.net.Socket.connect(Socket.java:591)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:562)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:538)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:452)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:433)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-07-16 21:58:42,064 [myid:3] - INFO  [WorkerSender[myid=3]:QuorumPeer$QuorumServer@167] - Resolved hostname: localhost to address: localhost/127.0.0.1
+2018-07-16 21:58:42,065 [myid:3] - WARN  [WorkerSender[myid=3]:QuorumCnxManager@588] - Cannot open channel to 5 at election address localhost/127.0.0.1:3892
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:400)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:243)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:225)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:402)
+	at java.base/java.net.Socket.connect(Socket.java:591)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:562)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:538)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:452)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:433)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-07-16 21:58:42,065 [myid:3] - INFO  [WorkerSender[myid=3]:QuorumPeer$QuorumServer@167] - Resolved hostname: localhost to address: localhost/127.0.0.1
+2018-07-16 21:58:42,066 [myid:3] - INFO  [WorkerReceiver[myid=3]:FastLeaderElection@600] - Notification: 1 (message format version), 2 (n.leader), 0x1600000000 (n.zxid), 0x4 (n.round), LOOKING (n.state), 3 (n.sid), 0x18 (n.peerEpoch) LOOKING (my state)
+2018-07-16 21:58:42,067 [myid:3] - WARN  [WorkerSender[myid=3]:QuorumCnxManager@588] - Cannot open channel to 4 at election address localhost/127.0.0.1:3891
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:400)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:243)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:225)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:402)
+	at java.base/java.net.Socket.connect(Socket.java:591)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:562)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:538)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:452)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:433)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-07-16 21:58:42,068 [myid:3] - INFO  [WorkerSender[myid=3]:QuorumPeer$QuorumServer@167] - Resolved hostname: localhost to address: localhost/127.0.0.1
+2018-07-16 21:58:42,068 [myid:3] - WARN  [WorkerSender[myid=3]:QuorumCnxManager@588] - Cannot open channel to 5 at election address localhost/127.0.0.1:3892
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:400)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:243)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:225)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:402)
+	at java.base/java.net.Socket.connect(Socket.java:591)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:562)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:538)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:452)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:433)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-07-16 21:58:42,069 [myid:3] - INFO  [WorkerSender[myid=3]:QuorumPeer$QuorumServer@167] - Resolved hostname: localhost to address: localhost/127.0.0.1
+2018-07-16 21:58:42,270 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:QuorumPeer@935] - FOLLOWING
+2018-07-16 21:58:42,280 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Learner@86] - TCP NoDelay set to: true
+2018-07-16 21:58:42,294 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT
+2018-07-16 21:58:42,294 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:host.name=192.168.1.2
+2018-07-16 21:58:42,294 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:java.version=10.0.1
+2018-07-16 21:58:42,294 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:java.vendor=Oracle Corporation
+2018-07-16 21:58:42,294 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home
+2018-07-16 21:58:42,294 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:java.class.path=/Users/rivigo/zookeeper/zk-server-3/bin/../build/classes:/Users/rivigo/zookeeper/zk-server-3/bin/../build/lib/*.jar:/Users/rivigo/zookeeper/zk-server-3/bin/../lib/slf4j-log4j12-1.6.1.jar:/Users/rivigo/zookeeper/zk-server-3/bin/../lib/slf4j-api-1.6.1.jar:/Users/rivigo/zookeeper/zk-server-3/bin/../lib/netty-3.10.5.Final.jar:/Users/rivigo/zookeeper/zk-server-3/bin/../lib/log4j-1.2.16.jar:/Users/rivigo/zookeeper/zk-server-3/bin/../lib/jline-0.9.94.jar:/Users/rivigo/zookeeper/zk-server-3/bin/../zookeeper-3.4.10.jar:/Users/rivigo/zookeeper/zk-server-3/bin/../src/java/lib/*.jar:/Users/rivigo/zookeeper/zk-server-3/bin/../conf:
+2018-07-16 21:58:42,294 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:java.library.path=/Users/rivigo/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2018-07-16 21:58:42,295 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:java.io.tmpdir=/var/folders/5x/3wxkg_5n6cn256hgd4nxj_1c0000gn/T/
+2018-07-16 21:58:42,295 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:java.compiler=<NA>
+2018-07-16 21:58:42,295 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:os.name=Mac OS X
+2018-07-16 21:58:42,295 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:os.arch=x86_64
+2018-07-16 21:58:42,295 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:os.version=10.13.4
+2018-07-16 21:58:42,295 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:user.name=rivigo
+2018-07-16 21:58:42,295 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:user.home=/Users/rivigo
+2018-07-16 21:58:42,295 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:user.dir=/Users/rivigo/zookeeper/zk-server-3
+2018-07-16 21:58:42,297 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:ZooKeeperServer@173] - Created server with tickTime 2000 minSessionTimeout 4000 maxSessionTimeout 40000 datadir /Users/rivigo/zookeeper/data/zk3/version-2 snapdir /Users/rivigo/zookeeper/data/zk3/version-2
+2018-07-16 21:58:42,298 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Follower@64] - FOLLOWING - LEADER ELECTION TOOK - 254
+2018-07-16 21:58:42,300 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:QuorumPeer$QuorumServer@167] - Resolved hostname: localhost to address: localhost/127.0.0.1
+2018-07-16 21:58:43,324 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Learner@336] - Getting a snapshot from leader
+2018-07-16 21:58:43,332 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:FileTxnSnapLog@248] - Snapshotting: 0x1600000000 to /Users/rivigo/zookeeper/data/zk3/version-2/snapshot.1600000000
+2018-07-16 21:58:45,472 [myid:3] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2183:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:55621
+2018-07-16 21:58:45,477 [myid:3] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2183:ServerCnxn@318] - The list of known four letter word commands is : [{1936881266=srvr, 1937006964=stat, 2003003491=wchc, 1685417328=dump, 1668445044=crst, 1936880500=srst, 1701738089=envi, 1668247142=conf, 2003003507=wchs, 2003003504=wchp, 1668247155=cons, 1835955314=mntr, 1769173615=isro, 1920298859=ruok, 1735683435=gtmk, 1937010027=stmk}]
+2018-07-16 21:58:45,478 [myid:3] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2183:ServerCnxn@319] - The list of enabled four letter word commands is : [[wchs, stat, stmk, conf, ruok, mntr, srvr, envi, srst, isro, dump, gtmk, crst, cons]]
+2018-07-16 21:58:45,478 [myid:3] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2183:NIOServerCnxn@883] - Processing srvr command from /127.0.0.1:55621
+2018-07-16 21:58:45,482 [myid:3] - INFO  [Thread-0:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:55621 (no session established for client)
